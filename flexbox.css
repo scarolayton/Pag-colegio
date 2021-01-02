@@ -161,14 +161,15 @@ input::placeholder {
     left: 0;
     
   }
-  .showSubMenu {
+  
+  .header__container--a {
     background-color: #060c55;
+    margin-top: 10px;
     display: block;
     align-self: center;
     margin-left: 20px;
     width: 80%;
   }
- 
   .header__container {
     width: 100%;
   }

@@ -5,8 +5,3 @@ document.querySelector(".hamburger-menu").addEventListener("click", () => {
 })
 
 
-menu.querySelector(".fas").addEventListener("click", () => {
-    menu.querySelectorAll(".header__container--a").forEach((subMenu) => {
-        subMenu.classList.toggle("showSubMenu");
-    })
-})
