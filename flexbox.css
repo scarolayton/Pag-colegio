@@ -1,8 +1,15 @@
 * {
   font-family: "Source Sans Pro", sans-serif;
 }
-body {
-  /* background-color: #060c55; */
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+
 }
 .header {
   position: relative;
@@ -30,6 +37,9 @@ body {
   text-decoration: none;
   color: white;
   font-size: 18px;
+}
+.header__container a i {
+  display: none;
 }
 .header__container a:hover {
   text-decoration: underline;
@@ -134,20 +144,56 @@ input::placeholder {
     width: 275px;
   }
 }
-@media screen and (max-width: 415px) {
-  .header {
-    flex-direction: column;
-    width: 100%;
-    height: 40px;
+@media screen and (max-width: 425px) {
+  .hamburger-menu {
+    display: inline-block;
   }
+  .header {
+    position: absolute;
+    left: -100%;
+    transition: 1s;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 50%;
+  }
+  .show {
+    left: 0;
+    
+  }
+  .showSubMenu {
+    background-color: #060c55;
+    display: block;
+    align-self: center;
+    margin-left: 20px;
+    width: 80%;
+  }
+ 
+  .header__container {
+    width: 100%;
+  }
+  .tittles {
+    display: inline-block;
+    width: 70%;
+    font-weight: 500;
+    
+    
+  }
+  .header__container .fas {
+    color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 10px;
+    
+   }
   body {
     height: 100vh;
   }
   .article {
     max-width: 100%;
     background-position-x: -70px;
-
-    /* height: auto; */
+    height: 100vh;
+    
   }
   .article__main {
     width: 60%;
@@ -155,6 +201,4 @@ input::placeholder {
   .input {
     width: 80%;
   }
-}
-@media screen and (max-width: 320px) {
 }
