@@ -38,7 +38,7 @@
   color: white;
   font-size: 18px;
 }
-.header__container a i {
+.header__container .fas {
   display: none;
 }
 .header__container a:hover {
